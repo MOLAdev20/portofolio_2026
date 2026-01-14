@@ -1,10 +1,13 @@
 import projectPilketos from "../assets/project/pilketos.png";
 import projectDigishop from "../assets/project/digishop.jpg";
 import GihtubIcons from "./icons/GithubSVG";
+import useInView from "../hooks/useInView";
 
 const ProjectComponents = () => {
+  const { ref, isVisible } = useInView();
+
   return (
-    <section id="projects" className="py-10">
+    <section ref={ref} id="projects" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
         <h2 className="text-2xl font-semibold text-slate-900">Project</h2>
         <p className="text-sm text-slate-500">Pilihan karya utama</p>
@@ -12,7 +15,13 @@ const ProjectComponents = () => {
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {/* E-Pilketos */}
-        <article className="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col">
+        <article
+          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col ${
+            isVisible
+              ? "opacity-100 translate-y-0 delay-0"
+              : "opacity-0 translate-y-6"
+          } transition-all duration-100`}
+        >
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="text-lg font-semibold text-slate-900">
@@ -67,7 +76,13 @@ const ProjectComponents = () => {
           </div>
         </article>
 
-        <article className="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col">
+        <article
+          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col ${
+            isVisible
+              ? "opacity-100 translate-y-0 delay-0"
+              : "opacity-0 translate-y-6"
+          } transition-all duration-300`}
+        >
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="text-lg font-semibold text-slate-900">Digishop</h3>

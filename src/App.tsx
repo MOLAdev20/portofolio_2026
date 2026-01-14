@@ -4,15 +4,25 @@ import ExperienceComponents from "./components/ExperienceComponents";
 import HeroComponents from "./components/HeroComponents";
 import ProjectComponents from "./components/ProjectComponents";
 import WorkExperienceComponents from "./components/WorkExperienceComponents";
+import logo from "./assets/logo.png";
 
 const App = () => {
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+      <header
+        id="test-aja"
+        className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200"
+      >
         <nav className="mx-auto max-w-6xl px-3 md:px-0 py-3 flex items-center justify-between gap-4">
           <a href="#top" className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt=""
+              width={"40px"}
+              className="rounded-full border-blue-200 border-3"
+            />
             <div className="leading-tight">
-              <p className="font-semibold">Sabiilul Hikam</p>
+              <p className="font-semibold">Sabilul Hikam</p>
               <p className="text-xs text-slate-500">
                 Web Developer | Tangerang, Banten
               </p>

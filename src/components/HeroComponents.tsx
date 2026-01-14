@@ -25,7 +25,7 @@ const HeroComponents = () => {
           <p className="mt-4 text-base md:text-lg text-slate-600 leading-relaxed">
             Saya adalah seorang Web Developer dengan pengalaman 4 tahun
             membangun puluhan aplikasi web untuk kebutuhan internal perusahaan
-            dan klien, fokus utama pada{" "}
+            dan klien, stack utama pada{" "}
             <span className="font-medium text-slate-900">
               PHP (CodeIgniter 4)
             </span>{" "}

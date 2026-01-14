@@ -1,4 +1,8 @@
+import useInView from "../hooks/useInView";
+
 const EducationComponents = () => {
+  const { ref, isVisible } = useInView();
+
   return (
     <section id="education" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
@@ -6,8 +10,14 @@ const EducationComponents = () => {
         <p className="text-sm text-slate-500">Akademik & jurusan</p>
       </div>
 
-      <div className="mt-6 grid gap-4 md:grid-cols-2">
-        <article className="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+      <div ref={ref} className="mt-6 grid gap-4 md:grid-cols-2">
+        <article
+          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft ${
+            isVisible
+              ? "opacity-100 translate-0 duration-100"
+              : "opacity-0 translate-y-6"
+          } transition-all`}
+        >
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="font-semibold text-slate-900">
@@ -35,7 +45,13 @@ const EducationComponents = () => {
           </ul>
         </article>
 
-        <article className="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+        <article
+          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft isVisible ${
+            isVisible
+              ? "opacity-100 translate-0 duration-300"
+              : "opacity-0 translate-y-6"
+          } transition-all`}
+        >
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="font-semibold text-slate-900">
