@@ -105,7 +105,7 @@ const App = () => {
         </nav>
       </header>
 
-      <div className="bg-sky-50 px-4">
+      <div className="bg-linear-to-b from-sky-50 to-slate-50 px-4">
         <div className="mx-auto max-w-6xl">
           <HeroComponents />
         </div>

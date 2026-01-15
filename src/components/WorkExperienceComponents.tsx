@@ -9,7 +9,7 @@ const WorkExperienceComponents = () => {
     <section id="experience" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
         <h2 className="text-2xl font-semibold text-slate-900">
-          Pengalaman Kerja
+          Working Experience
         </h2>
         <p className="text-sm text-slate-500">Kontribusi & hasil kerja</p>
       </div>
@@ -43,64 +43,68 @@ const WorkExperienceComponents = () => {
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Berkolaborasi lintas divisi untuk analisis kebutuhan, desain
-                solusi, dan implementasi aplikasi internal.
+                Collaborated across departments to analyze requirements, design
+                solutions, and implement internal applications.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Membangun sistem keuangan internal (CI4 + JS): invoice,
-                cashflow, reimbursement, proyeksi bulanan & tahunan.
+                Developed an internal financial system (CI4 + JavaScript)
+                covering invoicing, cash flow, reimbursements, and monthly &
+                yearly projections.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Mengembangkan Sistem Informasi Siswa: data siswa, absensi,
-                nilai, dan dukungan keputusan kelulusan.
+                Built a Student Information System, including student data
+                management, attendance tracking, grading, and graduation
+                decision support.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Monitoring alumni + visualisasi peta alumni di Jepang
-                menggunakan Leaflet.js.
+                Implemented alumni monitoring and alumni map visualization in
+                Japan using Leaflet.js.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Fitur pencatatan job dari Jepang & monitoring pasca pelatihan
-                untuk proses matching kandidat.
+                Developed job listing and tracking features for Japan-based
+                opportunities, including post-training monitoring to support
+                candidate matching.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Student Portal: progres belajar, jadwal ujian, riwayat
-                perkembangan, update kondisi & lokasi real-time.
+                Created a Student Portal featuring learning progress, exam
+                schedules, development history, and real-time condition &
+                location updates.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Sistem pendaftaran online + dashboard analitik status pendaftar
-                & rekap bulanan/tahunan.
+                Built an online registration system with an analytics dashboard
+                for applicant status and monthly/yearly summaries.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Sistem seleksi siswa berbasis React.js + Firebase untuk rekap
-                hasil.
+                Developed a student selection system using React.js and Firebase
+                for result tracking and recap.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Instalasi & konfigurasi web server dan mail server (Ubuntu,
-                iRedMail).
+                Handled installation and configuration of web and mail servers
+                (Ubuntu, iRedMail).
               </span>
             </li>
           </ul>
@@ -153,29 +157,31 @@ const WorkExperienceComponents = () => {
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Mengembangkan Sistem Manajemen Sekolah berbasis web menggunakan
-                PHP (CodeIgniter 3) dan JavaScript.
+                Developed a web-based School Management System using PHP
+                (CodeIgniter 3) and JavaScript.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Fitur inti: tabungan siswa, data siswa, manajemen kelas, nilai,
-                absensi, guru, mata pelajaran.
+                Implemented core features including student savings, student
+                data management, class management, grades, attendance, teachers,
+                and subjects.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Analisis kebutuhan & perancangan alur agar administrasi sekolah
-                lebih terstruktur dan efisien.
+                Conducted requirements analysis and designed system workflows to
+                improve the structure and efficiency of school administration
+                processes.
               </span>
             </li>
             <li className="flex gap-3 items-center">
               <span>•</span>
               <span>
-                Komunikasi aktif dengan klien untuk sinkron fitur, tampilan, dan
-                perubahan kebutuhan.
+                Maintained active communication with clients to align on
+                features, interface design, and evolving requirements.
               </span>
             </li>
           </ul>

@@ -3,6 +3,9 @@ import MapTagIcons from "./icons/MapTagSVG";
 import WhatsAppIcons from "./icons/WhatsAppSVG";
 import profilePicture from "../assets/profile.jpeg";
 import cv from "../assets/cv.pdf";
+import LinkedInIcons from "./icons/LinkedInSVG";
+import GihtubIcons from "./icons/GithubSVG";
+import InstagramIcons from "./icons/InstagramSVG";
 
 const HeroComponents = () => {
   return (
@@ -23,19 +26,19 @@ const HeroComponents = () => {
           </h1>
 
           <p className="mt-4 text-base md:text-lg text-slate-600 leading-relaxed">
-            Saya adalah seorang Web Developer dengan pengalaman 4 tahun
-            membangun puluhan aplikasi web untuk kebutuhan internal perusahaan
-            dan klien, stack utama pada{" "}
+            I am a Web Developer with 4 years of experience, working on various
+            web applications for both internal company use and clients. My main
+            technology stack includes{" "}
             <span className="font-medium text-slate-900">
               PHP (CodeIgniter 4)
             </span>{" "}
-            dan{" "}
+            and{" "}
             <span className="font-medium text-slate-900">
               Javascript (React JS & Express JS)
             </span>
-            . Terbiasa mengubah kebutuhan tim/klien menjadi sistem yang efisien
-            dan user-friendly dari perencanaan sampai rilis production dan
-            maintenance.
+            . I am used to turning team and client requirements into functional
+            web application systems, handling the process from planning to
+            production release and ongoing maintenance
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -43,29 +46,40 @@ const HeroComponents = () => {
               href={cv}
               className="px-12 py-2 rounded-lg active:scale-95 transition font-semibold bg-blue-500 text-white hover:opacity-90 shadow-soft"
             >
-              Unduh CV
+              See My Resume
             </a>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-slate-600">
-            <span className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-2">
-              <div className="w-5 h-5">
-                <MapTagIcons />
-              </div>
-              Tangerang, Banten
-            </span>
             <a
-              href="mailto:billhikam2003@gmail.com"
-              className="inline-flex hover:bg-slate-100 items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-2"
+              href="https://www.linkedin.com/in/sabilul-hikam/"
+              target="_blank"
+              className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
             >
               <div className="w-5 h-5">
-                <EmailIcons />
+                <LinkedInIcons />
               </div>
-              billhikam2003@gmail.com
+            </a>
+            <a
+              href="https://github.com/MOLAdev20"
+              target="_blank"
+              className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
+            >
+              <div className="w-5 h-5">
+                <GihtubIcons />
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/bill_hikam12"
+              className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
+            >
+              <div className="w-5 h-5">
+                <InstagramIcons />
+              </div>
             </a>
             <a
               href="https://wa.me/6283140318095"
-              className="inline-flex hover:bg-slate-100 items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-2"
+              className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
             >
               <div className="w-5 h-5">
                 <WhatsAppIcons />

@@ -1,28 +1,60 @@
+import php from "../assets/stack/php.png";
+import javascript from "../assets/stack/js.png";
+import ts from "../assets/stack/ts.png";
+import jquery from "../assets/stack/jquery.png";
+import next from "../assets/stack/next.png";
+import ci from "../assets/stack/ci.png";
+import laravel from "../assets/stack/laravel.png";
+import express from "../assets/stack/express.png";
+import react from "../assets/stack/react.png";
+import mysql from "../assets/stack/mysql.png";
+
 const ExperienceComponents = () => {
   return (
-    <div className="mt-6 grid gap-4 md:grid-cols-3">
-      <div className="rounded-2xl border border-slate-200 p-5">
-        <p className="text-sm text-slate-500">Pengalaman</p>
-        <p className="mt-1 text-xl font-semibold text-slate-900">4+ Tahun</p>
-        <p className="mt-2 text-sm text-slate-600">
-          Web apps internal & client.
-        </p>
+    <div className="my-5 max-w-2xl mx-auto ">
+      <h1 className="text-2xl font-semibold text-center">Stack What I Use</h1>
+      <div className="grid mt-10 gap-2 grid-cols-3 justify-items-center md:grid-cols-5">
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={php} width={"80px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={javascript} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={ts} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={jquery} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={next} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={ci} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={laravel} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={react} width={"50px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={express} width={"80px"} />
+        </div>
+        <div className="h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
+          <img src={mysql} width={"50px"} />
+        </div>
       </div>
-      <div className="rounded-2xl border border-slate-200 p-5">
-        <p className="text-sm text-slate-500">Stack utama</p>
-        <p className="mt-1 text-xl font-semibold text-slate-900">CI4 + JS</p>
-        <p className="mt-2 text-sm text-slate-600">
-          PHP (CodeIgniter 4), JavaScript.
-        </p>
-      </div>
-      <div className="rounded-2xl border border-slate-200 p-5">
-        <p className="text-sm text-slate-500">Pendukung</p>
-        <p className="mt-1 text-xl font-semibold text-slate-900">
-          Node / React
-        </p>
-        <p className="mt-2 text-sm text-slate-600">
-          Express.js, React, Firebase, MySQL.
-        </p>
+      <div className="flex justify-center gap-5 mt-10">
+        <div className="flex items-center gap-2 text-sm">
+          <div className="w-2 h-2 bg-green-400 rounded-full"></div> Beginner
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <div className="w-2 h-2 bg--400 rounded-full"></div> Advanced
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <div className="w-2 h-2 bg-green-400 rounded-full"></div> Intermediete
+        </div>
       </div>
     </div>
   );
