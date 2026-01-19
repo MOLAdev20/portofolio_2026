@@ -1,5 +1,3 @@
-import EmailIcons from "./icons/EmailSVG";
-import MapTagIcons from "./icons/MapTagSVG";
 import WhatsAppIcons from "./icons/WhatsAppSVG";
 import profilePicture from "../assets/profile.jpeg";
 import cv from "../assets/cv.pdf";

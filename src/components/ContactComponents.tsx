@@ -7,17 +7,16 @@ const ContactComponents = () => {
       <div className="grid lg:grid-cols-12 p-7 mx-auto max-w-7xl md:p-20 items-center">
         <div className="col-span-12 flex flex-col gap-3 items-center text-center space-y-4">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-            Tertarik Menjalin Kerja Sama atau Peluang Profesional?
+            Let's create something great together.
           </h2>
 
           <div className="w-16 h-1 bg-white/70 rounded-full"></div>
 
           <p className="text-white/80 leading-relaxed max-w-xl">
-            Saya terbuka untuk berbagai bentuk kolaborasi dan peluang
-            profesional, khususnya dalam pengembangan sistem berbasis web yang
-            terstruktur, scalable, dan berorientasi pada kenyamanan pengguna.
-            Baik untuk kebutuhan internal maupun pengembangan web application
-            secara menyeluruh.
+            Open to various forms of collaboration and professional
+            opportunities, particularly in the development of well-structured,
+            scalable, and user-focused web-based systems, whether for internal
+            business needs or end-to-end web application development
           </p>
           <div className="flex flex-col md:flex-row items-center gap-2">
             <span className="inline-flex items-center gap-1 rounded-full border border-slate-600 px-3 py-2">
@@ -26,12 +25,15 @@ const ContactComponents = () => {
               </div>
               billhikam2003@gmail.com
             </span>
-            <span className="inline-flex items-center gap-1 rounded-full border border-slate-600 px-3 py-2">
+            <a
+              href="https://wa.me/6283140318095"
+              className="inline-flex items-center gap-1 rounded-full border border-slate-600 px-3 py-2"
+            >
               <div className="w-5 h-5">
                 <WhatsAppIcons />
               </div>
               +62 831-4031-8095
-            </span>
+            </a>
           </div>
         </div>
 
@@ -71,7 +73,7 @@ const ContactComponents = () => {
       </div>
       <footer className="py-5 text-center text-sm text-slate-500">
         <p>
-          © <span id="year"></span> Sabiilul Hikam • Built with Tailwind CDN
+          © <span id="year"></span> Sabiilul Hikam - Create and Develop
         </p>
       </footer>
     </div>

@@ -6,12 +6,12 @@ const WorkExperienceComponents = () => {
   const card2 = useInView();
 
   return (
-    <section id="experience" className="py-10">
+    <section id="experience" className="py-10 mt-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
         <h2 className="text-2xl font-semibold text-slate-900">
           Working Experience
         </h2>
-        <p className="text-sm text-slate-500">Kontribusi & hasil kerja</p>
+        <p className="text-sm text-slate-500">Contribution & Working result</p>
       </div>
 
       <div className="mt-6 grid gap-4">
@@ -40,14 +40,14 @@ const WorkExperienceComponents = () => {
           </div>
 
           <ul className="mt-5 grid gap-3 text-slate-600 leading-relaxed">
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Collaborated across departments to analyze requirements, design
                 solutions, and implement internal applications.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Developed an internal financial system (CI4 + JavaScript)
@@ -55,7 +55,7 @@ const WorkExperienceComponents = () => {
                 yearly projections.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Built a Student Information System, including student data
@@ -63,14 +63,14 @@ const WorkExperienceComponents = () => {
                 decision support.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Implemented alumni monitoring and alumni map visualization in
                 Japan using Leaflet.js.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Developed job listing and tracking features for Japan-based
@@ -78,7 +78,7 @@ const WorkExperienceComponents = () => {
                 candidate matching.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Created a Student Portal featuring learning progress, exam
@@ -86,21 +86,21 @@ const WorkExperienceComponents = () => {
                 location updates.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Built an online registration system with an analytics dashboard
                 for applicant status and monthly/yearly summaries.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Developed a student selection system using React.js and Firebase
                 for result tracking and recap.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Handled installation and configuration of web and mail servers
@@ -154,14 +154,14 @@ const WorkExperienceComponents = () => {
           </div>
 
           <ul className="mt-5 grid gap-3 text-slate-600 leading-relaxed">
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Developed a web-based School Management System using PHP
                 (CodeIgniter 3) and JavaScript.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Implemented core features including student savings, student
@@ -169,7 +169,7 @@ const WorkExperienceComponents = () => {
                 and subjects.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Conducted requirements analysis and designed system workflows to
@@ -177,7 +177,7 @@ const WorkExperienceComponents = () => {
                 processes.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
                 Maintained active communication with clients to align on

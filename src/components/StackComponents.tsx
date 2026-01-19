@@ -55,7 +55,7 @@ const StackComponents = () => {
           <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
         </div>
       </div>
-      <div className="flex justify-center gap-5 mt-10">
+      <div className="flex justify-center gap-5 mt-15">
         <div className="flex items-center gap-2 text-sm">
           <div className="w-2 h-2 bg-green-400 rounded-full"></div> Beginner
         </div>

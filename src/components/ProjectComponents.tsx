@@ -1,5 +1,5 @@
 import projectPilketos from "../assets/project/pilketos.png";
-import projectDigishop from "../assets/project/digishop.jpg";
+import projectDigishop from "../assets/project/digishop.png";
 import GihtubIcons from "./icons/GithubSVG";
 import useInView from "../hooks/useInView";
 
@@ -9,8 +9,8 @@ const ProjectComponents = () => {
   return (
     <section ref={ref} id="projects" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
-        <h2 className="text-2xl font-semibold text-slate-900">Project</h2>
-        <p className="text-sm text-slate-500">Pilihan karya utama</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Projects</h2>
+        <p className="text-sm text-slate-500">Selected personal projects</p>
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -28,7 +28,7 @@ const ProjectComponents = () => {
                 E-Pilketos
               </h3>
               <p className="text-sm text-slate-500">
-                Sistem voting Ketua OSIS (Realtime)
+                Real-time Student Council Election System
               </p>
             </div>
             <span className="text-xs text-slate-600 rounded-full border border-slate-200 bg-slate-50 px-3 py-1">
@@ -46,9 +46,13 @@ const ProjectComponents = () => {
           </div>
 
           <p className="mt-4 text-slate-600 leading-relaxed">
-            Proyek PKM di SMKN 1 Campaka, Cianjur. Memungkinkan siswa voting
-            kandidat, panitia sebagai admin, dan hasil dipantau realtime
-            sehingga rekap lebih cepat, transparan, dan minim kesalahan.
+            A web-based student council voting system featuring candidate
+            selection, data validation, and real-time vote result updates
+            accessible to the entire school community. The application supports
+            administrators in managing candidates and performing vote
+            recapitulation in a faster, more transparent, and error-minimized
+            manner. Built with Tailwind CSS and JavaScript (jQuery) for the
+            frontend, and PHP (CodeIgniter 4) with MySQL on the backend
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2">
@@ -65,7 +69,7 @@ const ProjectComponents = () => {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href="#"
+              href="https://github.com/MOLAdev20/pkm-evoting"
               className="inline-flex items-center gap-1 px-4 py-2 rounded-2xl border bg-blue-500 text-white border-slate-200 hover:bg-blue-600"
             >
               <div className="w-5 h-5">
@@ -87,11 +91,11 @@ const ProjectComponents = () => {
             <div>
               <h3 className="text-lg font-semibold text-slate-900">Digishop</h3>
               <p className="text-sm text-slate-500">
-                Web Apps Penjualan Buku + Review
+                Book Sales & Review Web Application
               </p>
             </div>
             <span className="text-xs text-slate-600 rounded-full border border-slate-200 bg-slate-50 px-3 py-1">
-              2025
+              2023
             </span>
           </div>
 
@@ -105,8 +109,14 @@ const ProjectComponents = () => {
           </div>
 
           <p className="mt-4 text-slate-600 leading-relaxed">
-            Platform web apps untuk pembelian buku dan review pengguna. Backend
-            REST API dengan Express.js, database MySQL, antarmuka React.js.
+            A web-based application for book purchasing and user reviews,
+            featuring book catalogs, product details, purchase transactions, and
+            a user rating and review system. The platform implements a RESTful
+            API on the backend using Express.js, handling data management,
+            authentication, and integration with a MySQL database. The user
+            interface is built with React.js to deliver a responsive and
+            interactive user experience, enabling users to browse, purchase, and
+            review books efficiently
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2">
@@ -115,6 +125,9 @@ const ProjectComponents = () => {
             </span>
             <span className="rounded-full bg-slate-900 text-white px-3 py-1 text-xs">
               React JS
+            </span>
+            <span className="rounded-full bg-slate-900 text-white px-3 py-1 text-xs">
+              Tailwind CSS
             </span>
             <span className="rounded-full bg-slate-900 text-white px-3 py-1 text-xs">
               MySQL

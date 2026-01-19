@@ -6,8 +6,8 @@ const EducationComponents = () => {
   return (
     <section id="education" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
-        <h2 className="text-2xl font-semibold text-slate-900">Pendidikan</h2>
-        <p className="text-sm text-slate-500">Akademik & jurusan</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Education</h2>
+        <p className="text-sm text-slate-500">Academic and Major</p>
       </div>
 
       <div ref={ref} className="mt-6 grid gap-4 md:grid-cols-2">
@@ -21,26 +21,56 @@ const EducationComponents = () => {
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="font-semibold text-slate-900">
-                Universitas Pamulang
+                Pamulang University
               </h3>
-              <p className="text-sm text-slate-500">Teknik Informatika</p>
+              <p className="text-sm text-slate-500">Informatics Engineering</p>
             </div>
             <span className="text-xs text-slate-600 rounded-full border border-slate-200 bg-slate-50 px-3 py-1">
-              2023 – Sekarang
+              2023 – Now
             </span>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3">
               <span>•</span>
-              <span>Algoritma, struktur data, dan basis data.</span>
+              <span>
+                <h1 className="font-semibold">
+                  Algorithms, Data Structures, and Database Concepts.
+                </h1>
+                Study of problem-solving techniques, data organization,
+                computational efficiency, and relational database design to
+                support efficient and scalable software development.
+              </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3">
               <span>•</span>
-              <span>Pemrograman web: HTML, CSS, JavaScript.</span>
+              <span>
+                <h1 className="font-semibold">
+                  Intro to Web Programming (HTML, CSS, and JavaScript)
+                </h1>
+                Application of modern web development fundamentals, including
+                responsive UI design, client-side interactivity, and best
+                practices in web application development
+              </span>
             </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3">
               <span>•</span>
-              <span>Jaringan komputer.</span>
+              <span>
+                <h1 className="font-semibold">
+                  Intro to basic of Computer Networking
+                </h1>
+                Understanding basic of network architectures, communication
+                protocols, and basic network configuration to support reliable
+                data transmission
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span>•</span>
+              <span>
+                <h1 className="font-semibold">Software Development Projects</h1>
+                Development of multiple academic and related projects involving
+                the design and implementation of web-based applications to solve
+                real-world problems
+              </span>
             </li>
           </ul>
         </article>
@@ -64,22 +94,32 @@ const EducationComponents = () => {
             </span>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-slate-600">
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3">
               <span>•</span>
               <span>
-                Desain grafis (CorelDraw, Adobe Illustrator) & manipulasi gambar
-                (Photoshop).
+                <h1 className="font-semibold">
+                  Graphic Design and Image Manipulation
+                </h1>
+                Learn visual design using CorelDRAW and Adobe Illustrator, as
+                well as image editing and manipulation with Adobe Photoshop.
               </span>
             </li>
-            <li className="flex gap-3 items-center">
-              <span>•</span>
-              <span>Editing video (Adobe Premiere Pro).</span>
-            </li>
-            <li className="flex gap-3 items-center">
+            <li className="flex gap-3">
               <span>•</span>
               <span>
-                Pemrograman dasar (Java Netbeans) & animasi (Adobe
-                Flash/Animate).
+                <h1 className="font-semibold">Video Editing</h1>
+                Editing video (Adobe Premiere Pro).
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span>•</span>
+              <span>
+                <h1 className="font-semibold">
+                  Intro to Basic Programming & Animation
+                </h1>
+                Fundamental programming experience using Java (NetBeans), along
+                with basic animation development using Adobe Flash/Adobe
+                Animate.
               </span>
             </li>
           </ul>
