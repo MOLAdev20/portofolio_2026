@@ -1,6 +1,6 @@
 import ContactComponents from "./components/ContactComponents";
 import EducationComponents from "./components/EducationComponents";
-import ExperienceComponents from "./components/ExperienceComponents";
+import StackComponents from "./components/StackComponents";
 import HeroComponents from "./components/HeroComponents";
 import ProjectComponents from "./components/ProjectComponents";
 import WorkExperienceComponents from "./components/WorkExperienceComponents";
@@ -33,9 +33,15 @@ const App = () => {
           <div className="hidden md:flex items-center gap-2">
             <a
               className="px-3 py-2 rounded-xl hover:bg-slate-100"
+              href="#skills"
+            >
+              Skills
+            </a>
+            <a
+              className="px-3 py-2 rounded-xl hover:bg-slate-100"
               href="#experience"
             >
-              Pengalaman
+              Experience
             </a>
             <a
               className="px-3 py-2 rounded-xl hover:bg-slate-100"
@@ -45,15 +51,9 @@ const App = () => {
             </a>
             <a
               className="px-3 py-2 rounded-xl hover:bg-slate-100"
-              href="#skills"
-            >
-              Keahlian
-            </a>
-            <a
-              className="px-3 py-2 rounded-xl hover:bg-slate-100"
               href="#education"
             >
-              Pendidikan
+              Education
             </a>
           </div>
 
@@ -68,9 +68,15 @@ const App = () => {
             <div className="absolute right-4 mt-2 w-[min(90vw,320px)] rounded-2xl bg-white shadow-soft border border-slate-200 p-2">
               <a
                 className="block px-3 py-2 rounded-xl hover:bg-slate-100"
+                href="#skills"
+              >
+                Skills
+              </a>
+              <a
+                className="block px-3 py-2 rounded-xl hover:bg-slate-100"
                 href="#experience"
               >
-                Pengalaman
+                Experience
               </a>
               <a
                 className="block px-3 py-2 rounded-xl hover:bg-slate-100"
@@ -82,7 +88,7 @@ const App = () => {
                 className="block px-3 py-2 rounded-xl hover:bg-slate-100"
                 href="#education"
               >
-                Pendidikan
+                Education
               </a>
             </div>
           </details>
@@ -111,7 +117,7 @@ const App = () => {
         </div>
       </div>
       <div className="mx-auto max-w-6xl p-3 md:p-0">
-        <ExperienceComponents />
+        <StackComponents />
 
         <WorkExperienceComponents />
 
