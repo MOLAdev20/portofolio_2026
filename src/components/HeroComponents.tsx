@@ -4,99 +4,120 @@ import cv from "../assets/cv.pdf";
 import LinkedInIcons from "./icons/LinkedInSVG";
 import GihtubIcons from "./icons/GithubSVG";
 import InstagramIcons from "./icons/InstagramSVG";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 const HeroComponents = () => {
+
+  const highlight = useRef(null)
+
+  useEffect(() => {
+    const typed = new Typed(highlight.current, {
+      strings: ["Web Developer", "Lifelong Learner", "Tech Enthusiast"],
+      typeSpeed: 30,
+      loop: true,
+      backDelay: 2000
+    })
+
+    return () => {
+      typed.destroy()
+    }
+  }, [])
+
+
   return (
-    <section className="py-10 md:py-14">
-      <div className="grid gap-6 lg:grid-cols-12 items-start">
-        <div className="lg:col-span-8">
-          {/* <p className="inline-flex items-center gap-2 rounded-full bg-slate-900 text-white px-4 py-2 text-sm shadow-soft">
-            <span aria-hidden="true">⚡</span>
-            <span>Web Developer • 4+ tahun pengalaman</span>
-          </p> */}
+    <div className="bg-linear-to-b from-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700 px-4">
+      <div className="mx-auto max-w-6xl">
+        <section className="py-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-12 items-start">
+            <div className="lg:col-span-8">
 
-          <h1 className="mt-4 text-3xl md:text-5xl text-slate-900">
-            Hi, I'm{" "}
-            <span className="font-semibold text-blue-500">Sabiilul Hikam</span>
-          </h1>
-          <h1 className="mt-4 text-3xl md:text-5xl text-slate-900">
-            Web Developer
-          </h1>
+              <h1 className="mt-4 text-3xl md:text-5xl text-slate-900 dark:text-white">
+                Hi, I'm{" "}
+                <span className="font-semibold text-blue-500 dark:text-amber-500">
+                  Sabiilul Hikam
+                </span>
+              </h1>
+              <h1 className="mt-4 text-3xl md:text-5xl text-slate-900 dark:text-white">
+                a <span ref={highlight} >Web Developer</span>
+              </h1>
 
-          <p className="mt-4 text-base md:text-lg text-slate-600 leading-relaxed">
-            I am a Web Developer with 4 years of experience, working on various
-            web applications for both internal company use and clients. My main
-            technology stack includes{" "}
-            <span className="font-medium text-slate-900">
-              PHP (CodeIgniter 4)
-            </span>{" "}
-            and{" "}
-            <span className="font-medium text-slate-900">
-              Javascript (React JS & Express JS)
-            </span>
-            . I am used to turning team and client requirements into functional
-            web application systems, handling the process from planning to
-            production release and ongoing maintenance
-          </p>
+              <p className="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                I am a Web Developer with 4 years of professional experience, working on
+                various web applications for both internal company use and
+                clients. My main technology stack includes{" "}
+                <span className="font-medium text-slate-900 dark:text-orange-400">
+                  PHP (CodeIgniter 4)
+                </span>{" "}
+                and{" "}
+                <span className="font-medium text-slate-900 dark:text-orange-400">
+                  Javascript (React JS & Express JS)
+                </span>
+                . I am used to turning team and client requirements into
+                functional web application systems, handling the process from
+                planning to production release and ongoing maintenance
+              </p>
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href={cv}
-              className="px-12 py-2 rounded-lg active:scale-95 transition font-semibold bg-blue-500 text-white hover:opacity-90 shadow-soft"
-            >
-              See My Resume
-            </a>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href={cv}
+                  className="px-12 py-2 rounded-lg active:scale-95 transition font-semibold bg-blue-500 text-white dark:hover:ring-2 dark:hover:bg-transparent hover:opacity-90 shadow-soft"
+                >
+                  See My Resume
+                </a>
+              </div>
+
+              <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-slate-600">
+                <a
+                  href="https://www.linkedin.com/in/sabilul-hikam/"
+                  target="_blank"
+                  className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 dark:hover:bg-transparent hover:text-white px-3 py-2"
+                >
+                  <div className="w-5 h-5">
+                    <LinkedInIcons />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/MOLAdev20"
+                  target="_blank"
+                  className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 dark:hover:bg-transparent hover:text-white px-3 py-2"
+                >
+                  <div className="w-5 h-5">
+                    <GihtubIcons />
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/bill_hikam12"
+                  className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 dark:hover:bg-transparent hover:text-white px-3 py-2"
+                >
+                  <div className="w-5 h-5">
+                    <InstagramIcons />
+                  </div>
+                </a>
+                <a
+                  href="https://wa.me/6283140318095"
+                  className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white hover:bg-blue-500 dark:hover:bg-transparent hover:text-white px-3 py-2"
+                >
+                  <div className="w-5 h-5">
+                    <WhatsAppIcons />
+                  </div>
+                  +62 831-4031-8095
+                </a>
+              </div>
+            </div>
+
+            <aside className="lg:col-span-4 hidden md:block">
+              <img
+                src={profilePicture}
+                alt="profile"
+                width={"100%"}
+                className="rounded-full border-blue-100 border-18"
+              />
+            </aside>
           </div>
-
-          <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-slate-600">
-            <a
-              href="https://www.linkedin.com/in/sabilul-hikam/"
-              target="_blank"
-              className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
-            >
-              <div className="w-5 h-5">
-                <LinkedInIcons />
-              </div>
-            </a>
-            <a
-              href="https://github.com/MOLAdev20"
-              target="_blank"
-              className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
-            >
-              <div className="w-5 h-5">
-                <GihtubIcons />
-              </div>
-            </a>
-            <a
-              href="https://www.instagram.com/bill_hikam12"
-              className="rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
-            >
-              <div className="w-5 h-5">
-                <InstagramIcons />
-              </div>
-            </a>
-            <a
-              href="https://wa.me/6283140318095"
-              className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white hover:bg-blue-500 hover:text-white px-3 py-2"
-            >
-              <div className="w-5 h-5">
-                <WhatsAppIcons />
-              </div>
-              +62 831-4031-8095
-            </a>
-          </div>
-        </div>
-
-        <aside className="lg:col-span-4 hidden md:block">
-          <img
-            src={profilePicture}
-            alt="profile"
-            width={"100%"}
-            className="rounded-full border-blue-100 border-18"
-          />
-        </aside>
+        </section>
       </div>
-    </section>
+    </div>
   );
 };
 

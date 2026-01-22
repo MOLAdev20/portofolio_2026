@@ -16,43 +16,43 @@ const StackComponents = () => {
       <div className="grid mt-10 gap-2 grid-cols-3 justify-items-center md:grid-cols-5">
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={php} width={"80px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={javascript} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={ts} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-green-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-green-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={jquery} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={next} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={ci} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-red-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-red-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={laravel} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={react} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={express} width={"80px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
         <div className="relative h-24 w-full flex justify-center items-center border-2 hover:bg-blue-100 hover:scale-95 transition-all duration-200 rounded-xl border-blue-100">
           <img src={mysql} width={"50px"} />
-          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1"></div>
+          <div className="w-1.5 h-1.5 bg-blue-400 rounded absolute bottom-1 dark:ring-1"></div>
         </div>
       </div>
       <div className="flex justify-center gap-5 mt-15">
