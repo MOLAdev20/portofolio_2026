@@ -9,14 +9,14 @@ const ProjectComponents = () => {
   return (
     <section ref={ref} id="projects" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
-        <h2 className="text-2xl font-semibold text-slate-900">Projects</h2>
-        <p className="text-sm text-slate-500">Selected personal projects</p>
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Projects</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-200">Selected personal projects</p>
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {/* E-Pilketos */}
         <article
-          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col ${
+          className={`rounded-3xl bg-white dark:bg-slate-800 not-dark:border border-slate-200 p-6 shadow-soft flex flex-col ${
             isVisible
               ? "opacity-100 translate-y-0 delay-0"
               : "opacity-0 translate-y-6"
@@ -24,10 +24,10 @@ const ProjectComponents = () => {
         >
           <div className="flex items-start justify-between gap-3">
             <div>
-              <h3 className="text-lg font-semibold text-slate-900">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-200">
                 E-Pilketos
               </h3>
-              <p className="text-sm text-slate-500">
+              <p className="text-sm text-slate-500 dark:text-slate-400">
                 Real-time Student Council Election System
               </p>
             </div>
@@ -45,7 +45,7 @@ const ProjectComponents = () => {
             />
           </div>
 
-          <p className="mt-4 text-slate-600 leading-relaxed">
+          <p className="mt-4 text-slate-600 dark:text-slate-200 leading-relaxed">
             A web-based student council voting system featuring candidate
             selection, data validation, and real-time vote result updates
             accessible to the entire school community. The application supports
@@ -70,7 +70,7 @@ const ProjectComponents = () => {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="https://github.com/MOLAdev20/pkm-evoting"
-              className="inline-flex items-center gap-1 px-4 py-2 rounded-2xl border bg-blue-500 text-white border-slate-200 hover:bg-blue-600"
+              className="inline-flex items-center gap-1 px-4 py-2 rounded-2xl border bg-blue-500 dark:bg-transparent text-white border-slate-200 hover:bg-blue-600"
             >
               <div className="w-5 h-5">
                 <GihtubIcons />
@@ -81,7 +81,7 @@ const ProjectComponents = () => {
         </article>
 
         <article
-          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col ${
+          className={`rounded-3xl bg-white dark:bg-slate-800 not-dark:border border-slate-200 p-6 shadow-soft flex flex-col ${
             isVisible
               ? "opacity-100 translate-y-0 delay-0"
               : "opacity-0 translate-y-6"
@@ -89,8 +89,8 @@ const ProjectComponents = () => {
         >
           <div className="flex items-start justify-between gap-3">
             <div>
-              <h3 className="text-lg font-semibold text-slate-900">Digishop</h3>
-              <p className="text-sm text-slate-500">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-200">Digishop</h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400">
                 Book Sales & Review Web Application
               </p>
             </div>
@@ -108,7 +108,7 @@ const ProjectComponents = () => {
             />
           </div>
 
-          <p className="mt-4 text-slate-600 leading-relaxed">
+          <p className="mt-4 text-slate-600 dark:text-slate-200 leading-relaxed">
             A web-based application for book purchasing and user reviews,
             featuring book catalogs, product details, purchase transactions, and
             a user rating and review system. The platform implements a RESTful
@@ -137,7 +137,7 @@ const ProjectComponents = () => {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="https://github.com/MOLAdev20/digireact"
-              className="inline-flex items-center gap-1 px-4 py-2 rounded-2xl border bg-blue-500 text-white border-slate-200 hover:bg-blue-600"
+              className="inline-flex items-center gap-1 px-4 py-2 rounded-2xl border bg-blue-500 dark:bg-transparent text-white border-slate-200 hover:bg-blue-600"
             >
               <div className="w-5 h-5">
                 <GihtubIcons />
@@ -147,15 +147,6 @@ const ProjectComponents = () => {
           </div>
         </article>
       </div>
-
-      {/* <div className="mt-6 rounded-3xl bg-white border border-slate-200 p-6 md:p-8 shadow-soft">
-        <h3 className="font-semibold text-slate-900">Tambah project lain?</h3>
-        <p className="mt-2 text-slate-600">
-          Kamu bilang udah bikin puluhan aplikasi internal. Kalau mau, tambahin
-          3–6 project “ringkas” (nama, problem, stack, impact) biar recruiter
-          makin kebayang kontribusinya.
-        </p>
-      </div> */}
     </section>
   );
 };

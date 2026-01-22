@@ -6,13 +6,13 @@ const EducationComponents = () => {
   return (
     <section id="education" className="py-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
-        <h2 className="text-2xl font-semibold text-slate-900">Education</h2>
-        <p className="text-sm text-slate-500">Academic and Major</p>
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Education</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-300">Academic and Major</p>
       </div>
 
       <div ref={ref} className="mt-6 grid gap-4 md:grid-cols-2">
         <article
-          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft ${
+          className={`rounded-3xl bg-white dark:bg-slate-800 not-dark:border border-slate-200 p-6 shadow-soft ${
             isVisible
               ? "opacity-100 translate-0 duration-100"
               : "opacity-0 translate-y-6"
@@ -20,7 +20,7 @@ const EducationComponents = () => {
         >
           <div className="flex items-start justify-between gap-3">
             <div>
-              <h3 className="font-semibold text-slate-900">
+              <h3 className="font-semibold text-slate-900 dark:text-white">
                 Pamulang University
               </h3>
               <p className="text-sm text-slate-500">Informatics Engineering</p>
@@ -29,7 +29,7 @@ const EducationComponents = () => {
               2023 – Now
             </span>
           </div>
-          <ul className="mt-4 space-y-2 text-sm text-slate-600">
+          <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-200">
             <li className="flex gap-3">
               <span>•</span>
               <span>
@@ -76,7 +76,7 @@ const EducationComponents = () => {
         </article>
 
         <article
-          className={`rounded-3xl bg-white border border-slate-200 p-6 shadow-soft isVisible ${
+          className={`rounded-3xl bg-white dark:bg-slate-800 not-dark:border border-slate-200 p-6 shadow-soft isVisible ${
             isVisible
               ? "opacity-100 translate-0 duration-300"
               : "opacity-0 translate-y-6"
@@ -84,7 +84,7 @@ const EducationComponents = () => {
         >
           <div className="flex items-start justify-between gap-3">
             <div>
-              <h3 className="font-semibold text-slate-900">
+              <h3 className="font-semibold text-slate-900 dark:text-white">
                 SMKS Binong Permai
               </h3>
               <p className="text-sm text-slate-500">Multimedia</p>
@@ -93,7 +93,7 @@ const EducationComponents = () => {
               2018 – 2021
             </span>
           </div>
-          <ul className="mt-4 space-y-2 text-sm text-slate-600">
+          <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-200">
             <li className="flex gap-3">
               <span>•</span>
               <span>

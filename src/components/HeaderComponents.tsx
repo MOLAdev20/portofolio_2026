@@ -1,12 +1,23 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
+import MoonSVG from "./icons/MoonSVG";
+import SunSVG from "./icons/SunSVG";
 
 const HeaderComponents = () => {
   const [dark, setDark] = useState<boolean>(false);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-    console.log("HTML class:", document.documentElement.className);
+
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme == "light") {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.toggle("dark", true);
+    } else {
+      localStorage.setItem("theme", "light");
+      document.documentElement.classList.toggle("dark", false);
+    }
+
   }, [dark]);
 
   return (
@@ -32,36 +43,35 @@ const HeaderComponents = () => {
 
         {/* Desktop menu (no JS) */}
         <div className="hidden md:flex items-center gap-2">
-          <a className="px-3 py-2 rounded-xl hover:bg-slate-100" href="#skills">
+          <a className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800" href="#skills">
             Skills
           </a>
           <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100"
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
             href="#experience"
           >
             Experience
           </a>
           <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100"
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
             href="#projects"
           >
             Project
           </a>
           <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100"
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
             href="#education"
           >
             Education
           </a>
-          <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100"
-            href="#"
+          <button
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800 border cursor-pointer"
             onClick={() => {
               setDark((prev: boolean) => !prev);
             }}
           >
-            {dark ? "🌙" : "🌞"}
-          </a>
+            {dark ? (<MoonSVG/>) : (<SunSVG/>) }
+          </button>
         </div>
 
         {/* Mobile menu (no JS)  */}

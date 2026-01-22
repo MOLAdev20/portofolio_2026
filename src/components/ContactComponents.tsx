@@ -3,7 +3,7 @@ import WhatsAppIcons from "./icons/WhatsAppSVG";
 
 const ContactComponents = () => {
   return (
-    <div className="bg-slate-900 text-white shadow-soft">
+    <div className="bg-slate-900 text-white">
       <div className="grid lg:grid-cols-12 p-7 mx-auto max-w-7xl md:p-20 items-center">
         <div className="col-span-12 flex flex-col gap-3 items-center text-center space-y-4">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">

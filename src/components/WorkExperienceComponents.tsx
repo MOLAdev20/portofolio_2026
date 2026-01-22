@@ -8,17 +8,17 @@ const WorkExperienceComponents = () => {
   return (
     <section id="experience" className="py-10 mt-10">
       <div className="flex items-end justify-between gap-4 flex-wrap">
-        <h2 className="text-2xl font-semibold text-slate-900">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">
           Working Experience
         </h2>
-        <p className="text-sm text-slate-500">Contribution & Working result</p>
+        <p className="text-sm text-slate-500 dark:text-white">Contribution & Working result</p>
       </div>
 
       <div className="mt-6 grid gap-4">
         {/* PT Sakura */}
         <article
           ref={card1.ref}
-          className={`rounded-3xl bg-white border border-slate-200 p-6 md:p-8 shadow-soft ${
+          className={`rounded-3xl bg-white dark:bg-slate-800 not-dark:border border-slate-200 p-6 md:p-8 shadow-soft ${
             card1.isVisible
               ? "opacity-100 translate-y-0 duration-100"
               : "opacity-0 translate-y-2"
@@ -28,7 +28,7 @@ const WorkExperienceComponents = () => {
             <div className="flex items-center gap-4">
               <img src={samit} alt="samit" width={"48px"} />
               <div>
-                <h3 className="text-lg font-semibold text-slate-900">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-200">
                   PT Sakura Mitra Internasional
                 </h3>
                 <p className="text-sm text-slate-500">Web Developer</p>
@@ -39,7 +39,7 @@ const WorkExperienceComponents = () => {
             </span>
           </div>
 
-          <ul className="mt-5 grid gap-3 text-slate-600 leading-relaxed">
+          <ul className="mt-5 grid gap-3 text-slate-600 dark:text-slate-100 leading-relaxed">
             <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
@@ -137,13 +137,13 @@ const WorkExperienceComponents = () => {
         {/* Freelance */}
         <article
           ref={card2.ref}
-          className={`rounded-3xl bg-white border border-slate-200 p-6 md:p-8 shadow-soft ${
+          className={`rounded-3xl bg-white dark:bg-slate-800 not-dark:border border-slate-200 p-6 md:p-8 shadow-soft ${
             card2.isVisible ? "opacity-100" : "opacity-0 translate-y-6"
           } transition`}
         >
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
-              <h3 className="text-lg font-semibold text-slate-900">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-200">
                 Freelance — Web Developer
               </h3>
               <p className="text-sm text-slate-500">Tangerang, Indonesia</p>
@@ -153,7 +153,7 @@ const WorkExperienceComponents = () => {
             </span>
           </div>
 
-          <ul className="mt-5 grid gap-3 text-slate-600 leading-relaxed">
+          <ul className="mt-5 grid gap-3 text-slate-600 dark:text-slate-200 leading-relaxed">
             <li className="flex gap-3 md:items-center">
               <span>•</span>
               <span>
