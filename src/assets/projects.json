@@ -1,0 +1,16 @@
+{
+    {
+                  "title": "E-Pilketos",
+                  "subtitle": "Real-time Student Council Election System",
+                  "image": "/epilketos.png",
+                  "launchedYear": 2025,
+                  "link": "https://github.com/billhikam/e-pilketos",
+                  "description": "A web-based student council voting system featuring candidate
+          selection, data validation, and real-time vote result updates
+          accessible to the entire school community. The application supports
+          administrators in managing candidates and performing vote
+          recapitulation in a faster, more transparent, and error-minimized
+          manner. Built with Tailwind CSS and JavaScript (jQuery) for the
+          frontend, and PHP (CodeIgniter 4) with MySQL on the backend",
+                },
+}
