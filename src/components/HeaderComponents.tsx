@@ -9,28 +9,16 @@ export default function Header() {
 
   // Init theme
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme")
-    if (savedTheme === "dark") {
-      setDark(true)
-      document.documentElement.classList.add("dark")
-    }
-  }, [])
+    const currentTheme = localStorage.getItem("theme");
 
-  // Sync theme
-  useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark")
-      localStorage.setItem("theme", "dark")
+    if (currentTheme == "light") {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.toggle("dark", true);
     } else {
       document.documentElement.classList.remove("dark")
       localStorage.setItem("theme", "light")
     }
-  }, [dark])
-
-  // Lock scroll when menu open (IMPORTANT)
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : ""
-  }, [open])
+  }, [dark]);
 
   return (
     <>
@@ -68,12 +56,37 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Toggle */}
+        {/* Desktop menu (no JS) */}
+        <div className="hidden md:flex items-center gap-2">
+          <a
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
+            href="/#skills"
+          >
+            Skills
+          </a>
+          <a
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
+            href="/#experience"
+          >
+            Experience
+          </a>
+          <a
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
+            href="/projects"
+          >
+            Project
+          </a>
+          <a
+            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
+            href="/#education"
+          >
+            Education
+          </a>
           <button
             onClick={() => setOpen(true)}
             className="md:hidden rounded-xl border px-3 py-2"
           >
-            ☰
+            {dark ? <MoonSVG /> : <SunSVG />}
           </button>
         </nav>
       </header>
