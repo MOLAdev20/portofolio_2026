@@ -1,24 +1,36 @@
-import { useEffect, useState } from "react"
-import logo from "../assets/logo.png"
-import MoonSVG from "../components/icons/MoonSVG"
-import SunSVG from "../components/icons/SunSVG"
+import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
+import MoonSVG from "../components/icons/MoonSVG";
+import SunSVG from "../components/icons/SunSVG";
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
-  const [dark, setDark] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [dark, setDark] = useState(false);
 
   // Init theme
   useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setDark(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
-    if (currentTheme == "light") {
+  // Sync theme
+  useEffect(() => {
+    if (dark) {
+      document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
-      document.documentElement.classList.toggle("dark", true);
     } else {
-      document.documentElement.classList.remove("dark")
-      localStorage.setItem("theme", "light")
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [dark]);
+
+  // Lock scroll when menu open (IMPORTANT)
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+  }, [open]);
 
   return (
     <>
@@ -27,7 +39,12 @@ export default function Header() {
         <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           {/* Brand */}
           <a href="#top" className="flex items-center gap-3">
-            <img src={logo} alt="Logo" width={40} className="rounded-full border" />
+            <img
+              src={logo}
+              alt="Logo"
+              width={40}
+              className="rounded-full border"
+            />
             <div className="leading-tight">
               <p className="font-semibold">Sabilul Hikam</p>
               <p className="text-xs text-slate-500 dark:text-slate-300">
@@ -38,13 +55,18 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-2">
-            {["skills", "experience", "projects", "education"].map((item) => (
+            {[
+              { label: "Skills", href: "/#skills" },
+              { label: "Experience", href: "/#experience" },
+              { label: "Projects", href: "/projects" },
+              { label: "Education", href: "/#education" },
+            ].map((item) => (
               <a
-                key={item}
-                href={`#${item}`}
+                key={item.label}
+                href={item.href}
                 className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700"
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
+                {item.label}
               </a>
             ))}
 
@@ -56,37 +78,12 @@ export default function Header() {
             </button>
           </div>
 
-        {/* Desktop menu (no JS) */}
-        <div className="hidden md:flex items-center gap-2">
-          <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
-            href="/#skills"
-          >
-            Skills
-          </a>
-          <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
-            href="/#experience"
-          >
-            Experience
-          </a>
-          <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
-            href="/projects"
-          >
-            Project
-          </a>
-          <a
-            className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:text-slate-800"
-            href="/#education"
-          >
-            Education
-          </a>
+          {/* Mobile Toggle */}
           <button
             onClick={() => setOpen(true)}
             className="md:hidden rounded-xl border px-3 py-2"
           >
-            {dark ? <MoonSVG /> : <SunSVG />}
+            ☰
           </button>
         </nav>
       </header>
@@ -113,7 +110,9 @@ export default function Header() {
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
             <span className="font-semibold text-lg">Menu</span>
-            <button onClick={() => setOpen(false)} className="text-2xl">×</button>
+            <button onClick={() => setOpen(false)} className="text-2xl">
+              ×
+            </button>
           </div>
 
           {/* Links */}
@@ -140,8 +139,8 @@ export default function Header() {
           {/* Theme */}
           <button
             onClick={() => {
-              setDark((p) => !p)
-              setOpen(false)
+              setDark((p) => !p);
+              setOpen(false);
             }}
             className="flex w-full items-center justify-between rounded-xl px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-700"
           >
@@ -151,5 +150,5 @@ export default function Header() {
         </div>
       </div>
     </>
-  )
+  );
 }
