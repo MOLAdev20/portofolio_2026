@@ -45,14 +45,9 @@ const Projects = () => {
 
       <div className="mx-auto max-w-6xl p-3 md:p-0">
         <section id="projects" className="py-10">
-          <div className="flex items-end justify-between gap-4 flex-wrap">
-            <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">
-              Projects
-            </h2>
-            <p className="text-sm text-slate-500 dark:text-slate-200">
-              Selected personal projects
-            </p>
-          </div>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">
+            Projects
+          </h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <ProjectComponents
               detail={{

@@ -6,7 +6,6 @@ import SunSVG from "../components/icons/SunSVG";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(false);
-
   // Init theme
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -36,7 +35,7 @@ export default function Header() {
     <>
       {/* ===== HEADER ===== */}
       <header className="sticky top-0 z-30 bg-white/80 dark:bg-slate-800/80 backdrop-blur border-b border-slate-200 dark:border-slate-700">
-        <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <nav className="mx-auto max-w-6xl py-3 flex items-center justify-between">
           {/* Brand */}
           <a href="#top" className="flex items-center gap-3">
             <img
@@ -60,13 +59,13 @@ export default function Header() {
               { label: "Experience", href: "/#experience" },
               { label: "Projects", href: "/projects" },
               { label: "Education", href: "/#education" },
-            ].map((item) => (
+            ].map(({ label, href }) => (
               <a
-                key={item.label}
-                href={item.href}
+                key={label}
+                href={href}
                 className="px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700"
               >
-                {item.label}
+                {label}
               </a>
             ))}
 
@@ -118,11 +117,11 @@ export default function Header() {
           {/* Links */}
           <nav className="flex flex-col gap-4 text-lg">
             {[
-              ["Skills", "#skills"],
-              ["Experience", "#experience"],
-              ["Project", "#projects"],
-              ["Education", "#education"],
-            ].map(([label, href]) => (
+              { label: "Skills", href: "/#skills" },
+              { label: "Experience", href: "/#experience" },
+              { label: "Projects", href: "/projects" },
+              { label: "Education", href: "/#education" },
+            ].map(({ label, href }) => (
               <a
                 key={label}
                 href={href}

@@ -8,22 +8,20 @@ import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
 const HeroComponents = () => {
-
-  const highlight = useRef(null)
+  const highlight = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(highlight.current, {
       strings: ["Web Developer", "Lifelong Learner", "Tech Enthusiast"],
       typeSpeed: 30,
       loop: true,
-      backDelay: 2000
-    })
+      backDelay: 2000,
+    });
 
     return () => {
-      typed.destroy()
-    }
-  }, [])
-
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <div className="bg-linear-to-b from-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700 px-4">
@@ -31,7 +29,6 @@ const HeroComponents = () => {
         <section className="py-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-12 items-start">
             <div className="lg:col-span-8">
-
               <h1 className="mt-4 text-3xl md:text-5xl text-slate-900 dark:text-white">
                 Hi, I'm{" "}
                 <span className="font-semibold text-blue-500 dark:text-amber-500">
@@ -39,13 +36,13 @@ const HeroComponents = () => {
                 </span>
               </h1>
               <h1 className="mt-4 text-3xl md:text-5xl text-slate-900 dark:text-white">
-                a <span ref={highlight} >Web Developer</span>
+                a <span ref={highlight}></span>
               </h1>
 
               <p className="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                I am a Web Developer with 4 years of professional experience, working on
-                various web applications for both internal company use and
-                clients. My main technology stack includes{" "}
+                I am a Web Developer with 4 years of professional experience,
+                working on various web applications for both internal company
+                use and clients. My main technology stack includes{" "}
                 <span className="font-medium text-slate-900 dark:text-orange-400">
                   PHP (CodeIgniter 4)
                 </span>{" "}

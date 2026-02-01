@@ -7,7 +7,7 @@ const ContactComponents = () => {
       <div className="grid lg:grid-cols-12 p-7 mx-auto max-w-7xl md:p-20 items-center">
         <div className="col-span-12 flex flex-col gap-3 items-center text-center space-y-4">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-            Let's create something great together.
+            Let's create something great together
           </h2>
 
           <div className="w-16 h-1 bg-white/70 rounded-full"></div>

@@ -11,7 +11,9 @@ const WorkExperienceComponents = () => {
         <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">
           Working Experience
         </h2>
-        <p className="text-sm text-slate-500 dark:text-white">Contribution & Working result</p>
+        <p className="text-sm text-slate-500 dark:text-white">
+          Contribution & Working result
+        </p>
       </div>
 
       <div className="mt-6 grid gap-4">
@@ -112,6 +114,9 @@ const WorkExperienceComponents = () => {
           <div className="mt-6 flex flex-wrap gap-2">
             <span className="rounded-full bg-slate-900 text-white px-3 py-1 text-xs">
               CodeIgniter 4
+            </span>
+            <span className="rounded-full bg-slate-900 text-white px-3 py-1 text-xs">
+              Laravel
             </span>
             <span className="rounded-full bg-slate-900 text-white px-3 py-1 text-xs">
               JavaScript

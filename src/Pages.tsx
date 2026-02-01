@@ -39,7 +39,7 @@ const Pages = () => {
               Projects
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-200">
-              Selected personal projects
+              Selected projects
             </p>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
