@@ -21,12 +21,6 @@ const Projects = () => {
                 <h1 className="mt-3 text-3xl md:text-5xl text-slate-900 dark:text-white">
                   Selected Project
                 </h1>
-                <p className="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                  A curated selection of personal projects focused on solving
-                  real problems with clean interfaces and reliable backend
-                  logic. The highlights below are the same two projects featured
-                  on the homepage.
-                </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
@@ -57,7 +51,7 @@ const Projects = () => {
                 launchedYear: 2025,
                 link: "https://github.com/billhikam/e-pilketos",
                 isPublic: true,
-                description: `E-Student is a web-based application designed as a digital companion for students to monitor and manage their academic activities. The platform provides essential features such as attendance records, daily grade reports, and duty schedules, allowing students to access their learning progress in a centralized and structured system. The application is developed using PHP with the CodeIgniter 4 framework on the backend to handle data processing, business logic, and database operations. A MySQL database is used for data storage, while the frontend interface is built with Bootstrap 5, JavaScript, and jQuery to deliver a responsive and interactive user experience. E-Student helps students efficiently track their academic performance and stay informed about school activities through a simple and accessible web interface.`,
+                description: `A web-based student council voting system featuring candidate selection, data validation, and real-time vote result updates accessible to the entire school community. The application supports administrators in managing candidates and performing vote recapitulation in a faster, more transparent, and error-minimized manner. Built with Tailwind CSS and JavaScript (jQuery) for the frontend, and PHP (CodeIgniter 4) with MySQL on the backend`,
                 tag: ["Tailwind CSS", "CodeIgniter 4", "JQuery", "MySQL"],
               }}
             />
@@ -76,7 +70,7 @@ const Projects = () => {
             <ProjectComponents
               detail={{
                 title: "PANEL",
-                subtitle: "Book Sales & Review Web Application",
+                subtitle: "ERP & Academic Information System",
                 image: projectPanel,
                 launchedYear: 2025,
                 link: "-",
@@ -94,12 +88,12 @@ const Projects = () => {
             <ProjectComponents
               detail={{
                 title: "E-Student",
-                subtitle: "Book Sales & Review Web Application",
+                subtitle: "Student Academic Activity Monitoring System",
                 image: projectEstudent,
                 launchedYear: 2025,
                 link: "-",
                 isPublic: false,
-                description: `A web-based application for book purchasing and user reviews, featuring book catalogs, product details, purchase transactions, and a user rating and review system. The platform implements a RESTful API on the backend using Express.js, handling data management, authentication, and integration with a MySQL database. The user interface is built with React.js to deliver a responsive and interactive user experience, enabling users to browse, purchase, and review books efficiently`,
+                description: `A web-based application for monitoring student academic activities, including attendance tracking, grade management, and performance analytics. The system provides a centralized platform for educators to manage student data, generate reports, and monitor academic progress. Built with a modern tech stack including Bootstrap 5 for responsive UI design, CodeIgniter 4 for backend logic, and MySQL for data storage. The application supports user authentication based on registered student IDs.`,
                 tag: ["Bootstrap 5", "Codeigniter 4", "MySQL"],
               }}
             />

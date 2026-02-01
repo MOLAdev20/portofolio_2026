@@ -37,7 +37,7 @@ export default function Header() {
       <header className="sticky top-0 z-30 bg-white/80 dark:bg-slate-800/80 backdrop-blur border-b border-slate-200 dark:border-slate-700">
         <nav className="mx-auto max-w-6xl py-3 flex items-center justify-between">
           {/* Brand */}
-          <a href="#top" className="flex items-center gap-3">
+          <a href="/#top" className="flex items-center gap-3">
             <img
               src={logo}
               alt="Logo"
