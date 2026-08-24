@@ -43,7 +43,7 @@ const WorkExperienceComponents = () => {
           </div>
 
           <ul className="mt-5 grid gap-3 text-slate-600 dark:text-slate-100 leading-relaxed">
-            {workExperience[0].samit.map((item, index) => (
+            {workExperience[0].samit.map((item) => (
               <li className="flex gap-3 md:items-center">
                 <span>•</span>
                 <span>{item}</span>
