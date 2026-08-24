@@ -1,5 +1,6 @@
 import useInView from "../hooks/useInView";
 import samit from "../assets/samit.png";
+import workExperience from "../assets/experience.json";
 
 const WorkExperienceComponents = () => {
   const card1 = useInView();
@@ -42,73 +43,12 @@ const WorkExperienceComponents = () => {
           </div>
 
           <ul className="mt-5 grid gap-3 text-slate-600 dark:text-slate-100 leading-relaxed">
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Collaborated across departments to analyze requirements, design
-                solutions, and implement internal applications.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Developed an internal financial system (CI4 + JavaScript)
-                covering invoicing, cash flow, reimbursements, and monthly &
-                yearly projections.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Built a Student Information System, including student data
-                management, attendance tracking, grading, and graduation
-                decision support.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Implemented alumni monitoring and alumni map visualization in
-                Japan using Leaflet.js.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Developed job listing and tracking features for Japan-based
-                opportunities, including post-training monitoring to support
-                candidate matching.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Created a Student Portal featuring learning progress, exam
-                schedules, development history, and real-time condition &
-                location updates.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Built an online registration system with an analytics dashboard
-                for applicant status and monthly/yearly summaries.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Developed a student selection system using React.js and Firebase
-                for result tracking and recap.
-              </span>
-            </li>
-            <li className="flex gap-3 md:items-center">
-              <span>•</span>
-              <span>
-                Handled installation and configuration of web and mail servers
-                (Ubuntu, iRedMail).
-              </span>
-            </li>
+            {workExperience[0].samit.map((item, index) => (
+              <li className="flex gap-3 md:items-center">
+                <span>•</span>
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
 
           <div className="mt-6 flex flex-wrap gap-2">

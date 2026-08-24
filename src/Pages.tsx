@@ -6,7 +6,7 @@ import HeroComponents from "./components/HeroComponents";
 import ProjectComponents from "./components/ProjectComponents";
 import WorkExperienceComponents from "./components/WorkExperienceComponents";
 
-import projectPilketos from "@/assets/project/pilketos.png";
+import projectRentplay from "@/assets/project/rentplay.png";
 import projectDigishop from "@/assets/project/digishop.png";
 import { RightSVG } from "./components/icons/RightSVG";
 import { useEffect } from "react";
@@ -45,14 +45,22 @@ const Pages = () => {
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <ProjectComponents
               detail={{
-                title: "E-Pilketos",
-                subtitle: "Real-time Student Council Election System",
-                image: projectPilketos,
-                launchedYear: 2025,
-                link: "https://github.com/billhikam/e-pilketos",
-                description: `A web-based student council voting system featuring candidate selection, data validation, and real-time vote result updates accessible to the entire school community. The application supports administrators in managing candidates and performing vote recapitulation in a faster, more transparent, and error-minimized manner. Built with Tailwind CSS and JavaScript (jQuery) for the frontend, and PHP (CodeIgniter 4) with MySQL on the backend`,
+                title: "Rent.Play!",
+                subtitle: "Rental Web Application for Game Console",
+                image: projectRentplay,
+                launchedYear: 2026,
+                link: "https://github.com/MOLAdev20/rentalps",
+                description: `A point-of-sale (POS) application for game console rental operations. This application helps to manage PS units, record rental sessions and food and beverage orders, process payments, and view transaction and financial reports.`,
                 isPublic: true,
-                tag: ["Tailwind", "PHP", "MySQL"],
+                tag: [
+                  "TypeScript",
+                  "Vue JS",
+                  "Express JS",
+                  "Tailwind CSS",
+                  "Prisma ORM",
+                  "MySQL",
+                  "Midtrans Payment Gateway",
+                ],
               }}
             />
             <ProjectComponents
@@ -61,10 +69,17 @@ const Pages = () => {
                 subtitle: "Book Sales & Review Web Application",
                 image: projectDigishop,
                 launchedYear: 2025,
-                link: "https://github.com/billhikam/e-pilketos",
-                description: `A web-based application for book purchasing and user reviews, featuring book catalogs, product details, purchase transactions, and a user rating and review system. The platform implements a RESTful API on the backend using Express.js, handling data management, authentication, and integration with a MySQL database. The user interface is built with React.js to deliver a responsive and interactive user experience, enabling users to browse, purchase, and review books efficiently`,
+                link: "https://github.com/MOLAdev20/digireact",
+                description: `A web-based application for book purchasing and user reviews, featuring book catalogs, product details, purchase transactions, and a user rating and review system.`,
                 isPublic: true,
-                tag: ["React", "Express", "MySQL"],
+                tag: [
+                  "JavaScript",
+                  "React JS",
+                  "Express JS",
+                  "Midtrans Payment Gateway",
+                  "Sequelize",
+                  "MySQL",
+                ],
               }}
             />
           </div>

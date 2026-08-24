@@ -1,16 +1,90 @@
-{
-    {
-                  "title": "E-Pilketos",
-                  "subtitle": "Real-time Student Council Election System",
-                  "image": "/epilketos.png",
-                  "launchedYear": 2025,
-                  "link": "https://github.com/billhikam/e-pilketos",
-                  "description": "A web-based student council voting system featuring candidate
-          selection, data validation, and real-time vote result updates
-          accessible to the entire school community. The application supports
-          administrators in managing candidates and performing vote
-          recapitulation in a faster, more transparent, and error-minimized
-          manner. Built with Tailwind CSS and JavaScript (jQuery) for the
-          frontend, and PHP (CodeIgniter 4) with MySQL on the backend",
-                },
-}
+[
+  {
+    "title": "Rent.Play!",
+    "subtitle": "Rental Web Application for Game Console",
+    "image": "rentplay",
+    "launchedYear": 2026,
+    "link": "https://nihonskuy.com",
+    "isPublic": true,
+    "description": "A point-of-sale (POS) application for game console rental operations. This application helps to manage PS units, record rental sessions and food and beverage orders, process payments, and view transaction and financial reports.",
+    "tag": [
+      "TypeScript",
+      "Vue JS",
+      "Express JS",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "MySQL",
+      "Midtrans Payment Gateway"
+    ]
+  },
+  {
+    "title": "EStock",
+    "subtitle": "POS & Stock Management",
+    "image": "estock",
+    "launchedYear": 2026,
+    "link": "-",
+    "isPublic": false,
+    "description": "A web-based stock management and physical inventory (opname) system providing a centralized platform for real-time inventory tracking, optimized for seamless stock reconciliation and data accuracy. Built with Tailwind CSS for a responsive modern UI, React and TypeScript for a dynamic frontend experience, Express.js for robust backend logic, and MySQL for secure data storage.",
+    "tag": ["React JS", "Tailwind CSS", "Express JS", "Typescript", "MySQL"]
+  },
+  {
+    "title": "NihonSkuy Job Portal",
+    "subtitle": "Job Portal for Vacancies from Japan",
+    "image": "nihonskuy",
+    "launchedYear": 2026,
+    "link": "https://nihonskuy.com",
+    "isPublic": true,
+    "description": "A web-based job portal providing a centralized platform for employment opportunities in Japan, optimized for seamless job discovery and career insights. Built with Tailwind CSS for a responsive modern UI, Laravel for robust backend logic, and MySQL for secure data storage.",
+    "tag": ["Tailwind CSS", "Innertia JS", "Laravel", "MySQL"]
+  },
+  {
+    "title": "NihonsFinance",
+    "subtitle": "Financial Mangement for Nihonskuy",
+    "image": "nihonsFinance",
+    "launchedYear": 2026,
+    "link": "-",
+    "isPublic": false,
+    "description": "A web-based job portal providing a centralized platform for employment opportunities in Japan, optimized for seamless job discovery and career insights. Built with Tailwind CSS for a responsive modern UI, Laravel for robust backend logic, and MySQL for secure data storage.",
+    "tag": ["Tailwind CSS", "Innertia JS", "Laravel", "MySQL"]
+  },
+  {
+    "title": "E-Pilketos",
+    "subtitle": "Real-time Student Council Election System",
+    "image": "pilketos",
+    "launchedYear": 2025,
+    "link": "https://github.com/billhikam/e-pilketos",
+    "isPublic": true,
+    "description": "A web-based student council voting system featuring candidate selection, data validation, and real-time vote result updates accessible to the entire school community. The application supports administrators in managing candidates and performing vote recapitulation in a faster, more transparent, and error-minimized manner. Built with Tailwind CSS and JavaScript (jQuery) for the frontend, and PHP (CodeIgniter 4) with MySQL on the backend.",
+    "tag": ["Tailwind CSS", "CodeIgniter 4", "JQuery", "MySQL"]
+  },
+  {
+    "title": "Digishop",
+    "subtitle": "Book Sales & Review Web Application",
+    "image": "digishop",
+    "launchedYear": 2025,
+    "link": "https://github.com/billhikam/e-pilketos",
+    "isPublic": true,
+    "description": "A web-based application for book purchasing and user reviews, featuring book catalogs, product details, purchase transactions, and a user rating and review system. The platform implements a RESTful API on the backend using Express.js, handling data management, authentication, and integration with a MySQL database. The user interface is built with React.js to deliver a responsive and interactive user experience, enabling users to browse, purchase, and review books efficiently.",
+    "tag": ["Tailwind CSS", "React JS", "Express JS", "MySQL"]
+  },
+  {
+    "title": "PANEL",
+    "subtitle": "ERP & Academic Information System",
+    "image": "panel",
+    "launchedYear": 2025,
+    "link": "-",
+    "isPublic": false,
+    "description": "PANEL is an advanced ERP and academic information system designed to centralize and manage institutional data. The platform provides comprehensive student management, including detailed student profiles, academic records, grading data, and administrative information. The system also supports alumni tracking, including graduate distribution abroad such as in Japan, dormitory management with resident and occupancy data, and other academic and operational information. PANEL enables efficient data management, monitoring, and decision-making through a unified and structured platform.",
+    "tag": ["Bootstrap 5", "JQuery", "Leaflet JS", "Codeigniter 4", "MySQL"]
+  },
+  {
+    "title": "E-Student",
+    "subtitle": "Student Academic Activity Monitoring System",
+    "image": "estudent",
+    "launchedYear": 2025,
+    "link": "-",
+    "isPublic": false,
+    "description": "A web-based application for monitoring student academic activities, including attendance tracking, grade management, and performance analytics. The system provides a centralized platform for educators to manage student data, generate reports, and monitor academic progress. Built with Bootstrap 5 for responsive UI design, CodeIgniter 4 for backend logic, and MySQL for data storage. The application supports user authentication based on registered student IDs.",
+    "tag": ["Bootstrap 5", "Codeigniter 4", "MySQL"]
+  }
+]
